@@ -7,7 +7,7 @@ public class Retiros extends Transacciones_Bancarias{
         this.cantidad_retirar = cantidad_retirar;
     }
 
-    public Retiros(String numero_cuenta, String nombre_usuario, String cedula_usuario, double saldo_actual, String id_transaccion, String tipo_transaccion, Date fecha_transaccion, String ubicacion_transaccion, double cantidad_retirar) {
+    public Retiros(String numero_cuenta, String nombre_usuario, String cedula_usuario, double saldo_actual, String id_transaccion, Date fecha_transaccion, String ubicacion_transaccion, double cantidad_retirar) {
         super(numero_cuenta, nombre_usuario, cedula_usuario, saldo_actual, id_transaccion, "RETIRO", fecha_transaccion, ubicacion_transaccion);
         this.cantidad_retirar = cantidad_retirar;
     }

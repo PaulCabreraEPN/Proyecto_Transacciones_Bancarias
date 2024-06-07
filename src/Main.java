@@ -1,15 +1,18 @@
 import java.util.Scanner;
+import java.util.Date;
+
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        /*
         Scanner x = new Scanner(System.in);
         int opcion = 0;
         do {
         /*System.out.println("-----INICIAR SESION-----");
         System.out.println("Nombre del usuario: ");
         System.out.println("Contraseña: ");
-        Scanner sc = new Scanner(System.in);*/
+        Scanner sc = new Scanner(System.in);
             System.out.println("-----BANCO PS-----");
             System.out.println("1. Deposito");
             System.out.println("2. Retiro");
@@ -40,8 +43,12 @@ public class Main {
                 default:
                     System.out.println("Opcion no valida, por favor ingrese nuevamente");
             }
-        } while (opcion != 6);
-
+        } while (opcion != 6);*/
+        Cliente cliente = new Cliente("555555","Juan","1753653458",500);
+        Date fecha = new Date(946684800000L);
+        Retiros retiro = new Retiros(cliente.numero_cuenta,cliente.nombre_usuario, cliente.cedula_usuario, cliente.saldo_actual,"0001",fecha,"EL jorguito",80);
+        Depositos deposito =new Depositos(cliente.numero_cuenta,cliente.nombre_usuario, cliente.cedula_usuario, cliente.saldo_actual,"0001",fecha,"EL jorguito",)
+        retiro.mostrar_informacion_transaccion();
 
 
     }
