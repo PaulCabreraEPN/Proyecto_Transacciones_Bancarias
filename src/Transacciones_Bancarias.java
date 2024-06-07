@@ -64,6 +64,7 @@ public class Transacciones_Bancarias extends Cliente {
         System.out.println("El cedula usuario es: " + cedula_usuario);
         System.out.println("El fecha transaccion es: " + fecha_transaccion);
         System.out.println("El ubicacion transaccion es: " + ubicacion_transaccion);
+
     }
 
 

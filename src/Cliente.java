@@ -51,5 +51,6 @@ public class Cliente {
         System.out.println("Usuario: " + nombre_usuario);
         System.out.println("Cedula Usuario: " + cedula_usuario);
         System.out.println("Saldo Actual: " + saldo_actual);
+
     }
 }
