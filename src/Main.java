@@ -16,7 +16,7 @@ public class Main {
             System.out.println("3. Transferencia");
             System.out.println("4. Pago de servicio");
             System.out.println("5. Mostrar Cuenta");
-            System.out.println("6. Salir");
+            System.out.println("6. Salirh");
             System.out.println("Seleccione el tipo de transaccion que desea: ");
             opcion = x.nextInt();
             switch (opcion) {
