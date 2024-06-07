@@ -60,11 +60,12 @@ public class Transacciones_Bancarias extends Cliente {
     public void mostrar_informacion_transaccion() {
         System.out.println("El id_transaccion es: " + id_transaccion);
         System.out.println("El numero de cuenta es: " + numero_cuenta);
+        System.out.println("El tipode transacción es: " + Tipo_transaccion);
         System.out.println("El nombre usuario es: " + nombre_usuario);
         System.out.println("El cedula usuario es: " + cedula_usuario);
         System.out.println("El fecha transaccion es: " + fecha_transaccion);
         System.out.println("El ubicacion transaccion es: " + ubicacion_transaccion);
-
+        System.out.println("El saldo anterior es: " + saldo_actual);
     }
 
 
