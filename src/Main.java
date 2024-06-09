@@ -46,9 +46,16 @@ public class Main {
         } while (opcion != 6);*/
         Cliente cliente = new Cliente("555555","Juan","1753653458",500);
         Date fecha = new Date(946684800000L);
+
+        Depositos deposito =new Depositos(cliente.numero_cuenta,cliente.nombre_usuario, cliente.cedula_usuario, cliente.saldo_actual,"0001",fecha,"EL jorguito",90);
+        deposito.mostrar_informacion_transaccion();
+        cliente.setSaldo_actual(deposito.saldo_actual);
+
         Retiros retiro = new Retiros(cliente.numero_cuenta,cliente.nombre_usuario, cliente.cedula_usuario, cliente.saldo_actual,"0001",fecha,"EL jorguito",80);
-        Depositos deposito =new Depositos(cliente.numero_cuenta,cliente.nombre_usuario, cliente.cedula_usuario, cliente.saldo_actual,"0001",fecha,"EL jorguito",)
         retiro.mostrar_informacion_transaccion();
+        cliente.setSaldo_actual(retiro.saldo_actual);
+
+        cliente.mostrar_info_cliente();
 
 
     }

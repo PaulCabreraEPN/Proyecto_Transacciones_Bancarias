@@ -5,7 +5,7 @@ public class Depositos extends Transacciones_Bancarias{
 
     public Depositos() {}
 
-    public Depositos(String numero_cuenta, String nombre_usuario, String cedula_usuario, double saldo_actual, String id_transaccion, String tipo_transaccion, Date fecha_transaccion, String ubicacion_transaccion, double cantidad_depositar) {
+    public Depositos(String numero_cuenta, String nombre_usuario, String cedula_usuario, double saldo_actual, String id_transaccion, Date fecha_transaccion, String ubicacion_transaccion, double cantidad_depositar) {
         super(numero_cuenta, nombre_usuario, cedula_usuario, saldo_actual, id_transaccion, "Deposito", fecha_transaccion, ubicacion_transaccion);
         this.cantidad_depositar = cantidad_depositar;
     }
@@ -21,7 +21,9 @@ public class Depositos extends Transacciones_Bancarias{
     //Calcular deposito
 
     public double calcular_deposito() {
-        return saldo_actual+cantidad_depositar;
+
+        saldo_actual= saldo_actual+cantidad_depositar;
+        return saldo_actual;
     }
 
     //Metodo de impresion

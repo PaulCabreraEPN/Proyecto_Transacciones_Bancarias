@@ -22,14 +22,15 @@ public class Retiros extends Transacciones_Bancarias{
 
 
 
-    public double calcular_saldo(double saldo_actual, double cantidad_retirar ) {
-        return saldo_actual - cantidad_retirar;
+    public double calcular_saldo() {
+        saldo_actual= saldo_actual - cantidad_retirar;
+        return saldo_actual;
     }
 
     @Override
     public void mostrar_informacion_transaccion(){
         super.mostrar_informacion_transaccion();
-        System.out.println("El monto depositado: "+cantidad_retirar);
-        System.out.println("El saldo actual es: " + calcular_saldo(saldo_actual, cantidad_retirar));
+        System.out.println("El monto retirado: "+cantidad_retirar);
+        System.out.println("El saldo actual es: " + calcular_saldo());
     }
 }
